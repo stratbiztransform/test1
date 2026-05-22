@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Lam 牙醫診所 | 銅鑼灣專業牙科護理</title>
+    <meta name="description" content="Matthew Lam 牙醫診所位於香港銅鑼灣，提供一般牙科檢查、洗牙、植牙、矯齒、牙齒美白等全面牙科服務。立即預約！">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <div class="logo-icon">🦷</div>
+                <span class="logo-text">Matthew Lam 牙醫診所</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link active">首頁</a>
+                <a href="#services" class="nav-link">服務範圍</a>
+                <a href="#about" class="nav-link">關於我們</a>
+                <a href="#contact" class="nav-link">聯絡方法</a>
+                <a href="#booking" class="nav-link nav-cta">預約</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="開啟選單">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== MOBILE MENU OVERLAY ========== -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileClose" aria-label="關閉選單">&times;</button>
+        <a href="#home" class="mobile-link">首頁</a>
+        <a href="#services" class="mobile-link">服務範圍</a>
+        <a href="#about" class="mobile-link">關於我們</a>
+        <a href="#contact" class="mobile-link">聯絡方法</a>
+        <a href="#booking" class="mobile-link mobile-cta">預約</a>
+    </div>
+
+    <!-- ========== SECTION: HOME ========== -->
+    <section id="home" class="section">
+
+        <!-- Hero Banner -->
+        <div class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">您值得擁有的自信笑容</h1>
+                <p class="hero-subtitle">Matthew Lam 牙醫診所 — 銅鑼灣專業牙科護理，以細心與專業守護每一位客人的口腔健康。</p>
+                <div class="hero-btns">
+                    <a href="#booking" class="btn btn-primary">立即預約</a>
+                    <a href="#services" class="btn btn-outline">了解我們的服務</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="why-us">
+            <div class="container">
+                <h2 class="section-title">為什麼選擇我們</h2>
+                <div class="card-grid four-col">
+                    <div class="icon-card">
+                        <div class="icon-card-icon">🏥</div>
+                        <h3>專業團隊</h3>
+                        <p>由資深牙科醫生主理，團隊擁有豐富臨床經驗</p>
+                    </div>
+                    <div class="icon-card">
+                        <div class="icon-card-icon">🛡️</div>
+                        <h3>安心衛生</h3>
+                        <p>嚴格遵循感染控制標準，所有器材經高溫消毒</p>
+                    </div>
+                    <div class="icon-card">
+                        <div class="icon-card-icon">🕐</div>
+                        <h3>彈性預約</h3>
+                        <p>提供網上預約服務，輕鬆配合您的時間安排</p>
+                    </div>
+                    <div class="icon-card">
+                        <div class="icon-card-icon">😊</div>
+                        <h3>貼心服務</h3>
+                        <p>重視每位客人的感受，營造舒適無壓的診療體驗</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Overview -->
+        <div class="services-overview">
+            <div class="container">
+                <h2 class="section-title">精選服務概覽</h2>
+                <div class="card-grid three-col">
+                    <div class="service-card" data-target="svc-1">
+                        <div class="service-card-icon"><i class="fas fa-teeth"></i></div>
+                        <h3>洗牙及檢查</h3>
+                        <p>全面口腔評估及專業超聲波潔牙，預防牙周病及蛀牙</p>
+                        <a href="#services" class="card-link">了解更多 →</a>
+                    </div>
+                    <div class="service-card" data-target="svc-4">
+                        <div class="service-card-icon"><i class="fas fa-star"></i></div>
+                        <h3>牙齒美白</h3>
+                        <p>安全有效的專業美白療程，回復亮白笑容</p>
+                        <a href="#services" class="card-link">了解更多 →</a>
+                    </div>
+                    <div class="service-card" data-target="svc-6">
+                        <div class="service-card-icon"><i class="fas fa-tooth"></i></div>
+                        <h3>植牙</h3>
+                        <p>長期穩固的缺牙解決方案，外觀功能與天然牙無異</p>
+                        <a href="#services" class="card-link">了解更多 →</a>
+                    </div>
+                    <div class="service-card" data-target="svc-5">
+                        <div class="service-card-icon"><i class="fas fa-teeth-open"></i></div>
+                        <h3>牙齒矯正 / 箍牙</h3>
+                        <p>傳統矯正器及隱適美隱形矯正，度身訂制方案</p>
+                        <a href="#services" class="card-link">了解更多 →</a>
+                    </div>
+                    <div class="service-card" data-target="svc-9">
+                        <div class="service-card-icon"><i class="fas fa-child"></i></div>
+                        <h3>兒童牙科</h3>
+                        <p>以耐心親切的態度為小朋友提供口腔護理</p>
+                        <a href="#services" class="card-link">了解更多 →</a>
+                    </div>
+                    <div class="service-card" data-target="svc-10">
+                        <div class="service-card-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>緊急牙科服務</h3>
+                        <p>突發牙痛或意外？我們提供緊急診症服務</p>
+                        <a href="#services" class="card-link">了解更多 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clinic Gallery Carousel -->
+        <div class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">診所環境</h2>
+                <p class="section-desc">我們致力打造一個明亮、整潔、讓您安心的診療空間。</p>
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide">
+                            <div class="carousel-placeholder">
+                                <i class="fas fa-couch"></i>
+                                <span>舒適候診區</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-placeholder">
+                                <i class="fas fa-desktop"></i>
+                                <span>明亮接待處</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-placeholder">
+                                <i class="fas fa-x-ray"></i>
+                                <span>先進診療室</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-placeholder">
+                                <i class="fas fa-pump-medical"></i>
+                                <span>專業消毒設備</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-placeholder">
+                                <i class="fas fa-door-open"></i>
+                                <span>溫馨診所入口</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="上一張"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn carousel-next" id="carouselNext" aria-label="下一張"><i class="fas fa-chevron-right"></i></button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials">
+            <div class="container">
+                <h2 class="section-title">患者評價</h2>
+                <div class="card-grid three-col">
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">「林醫生非常細心，整個洗牙過程完全不會痛，診所環境也很舒適。強烈推薦！」</p>
+                        <div class="testimonial-author">— 陳先生</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">「之前一直很怕看牙醫，但林醫生的團隊很有耐心地解釋每個步驟，讓我放心了很多。」</p>
+                        <div class="testimonial-author">— 李小姐</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">「預約系統很方便，到診所也不用等太久，服務效率高而且專業。」</p>
+                        <div class="testimonial-author">— 張先生</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <div class="container cta-content">
+                <h2>準備好展現最燦爛的笑容了嗎？</h2>
+                <p>立即預約，讓我們為您提供最專業的牙科護理。</p>
+                <a href="#booking" class="btn btn-primary btn-lg">預約諮詢</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ========== SECTION: SERVICES ========== -->
+    <section id="services" class="section">
+        <div class="page-banner">
+            <div class="container">
+                <h1>我們的服務</h1>
+                <p>全面的牙科護理服務，守護您和家人的口腔健康。</p>
+            </div>
+        </div>
+        <div class="container services-list">
+
+            <div class="accordion-item" id="svc-1">
+                <button class="accordion-header">
+                    <span class="accordion-icon"><i class="fas fa-teeth"></i></span>
+                    <span class="accordion-title">一般牙科檢查及洗牙 <small>General Check-up &amp; Cleaning</small></span>
+                    <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+                </button>
+                <div class="accordion-body">
+                    <p>定期口腔檢查是維護牙齒健康的基礎。我們的檢查包括全面口腔評估、牙周狀況檢查及專業洗牙（超聲波潔牙），有效清除日常刷牙難以去除的牙石和牙菌膜，預防牙周病及蛀牙。</p>
+                    <p><strong>建議頻率：</strong>每 6 個月一次</p>
+                    <p><strong>適用對象：</strong>所有年齡層</p>
+                    <a href="#booking" class="btn btn-primary btn-sm">立即預約此服務</a>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="svc-2">
+                <button class="accordion-header">
+                    <span class="accordion-icon"><i class="fas fa-fill-drip"></i></span>
+                    <span class="accordion-title">補牙 / 蛀牙治療 <small>Fillings &amp; Cavity Treatment</small></span>
+                    <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+                </button>
+                <div class="accordion-body">
+                    <p>針對不同程度的蛀牙，我們提供樹脂補牙（Composite Filling）及其他修復方案，以接近天然牙齒的色澤修補受損部位，恢復牙齒的功能與美觀。</p>
+                    <p><strong>適用對象：</strong>有蛀牙、牙齒崩裂或舊補牙物料需更換者</p>
+                    <a href="#booking" class="btn btn-primary btn-sm">立即預約此服務</a>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="svc-3">
+                <button class="accordion-header">
+                    <span class="accordion-icon"><i class="fas fa-syringe"></i></span>
+                    <span class="accordion-title">根管治療 <small>Root Canal Treatment</small></span>
+                    <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+                </button>
+                <div class="accordion-body">
+                    <p>當蛀牙深入牙髓（牙神經）引致嚴重疼痛或感染時，根管治療可清除受感染的牙髓組織，保留天然牙齒，避免拔牙。我們採用先進的器材與技術，力求治療過程舒適且高效。</p>
+                    <p><strong>適用對象：</strong>牙齒嚴重蛀蝕、牙髓發炎或感染者</p>
+                    <a href="#booking" class="btn btn-primary btn-sm">立即預約此服務</a>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="svc-4">
+                <button class="accordion-header">
+                    <span class="accordion-icon"><i class="fas fa-star"></i></span>
+                    <span class="accordion-title">牙齒美白 <small>Teeth Whitening</small></span>
+                    <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+                </button>
+                <div class="accordion-body">
+                    <p>專業牙齒美白療程可有效改善因飲食、年齡或生活習慣導致的牙齒變色。我們提供診所內即時美白及居家美白方案，讓您安全地回復亮白笑容。</p>
+                    <p><strong>適用對象：</strong>希望改善牙齒色澤者（需先經牙醫評估適合性）</p>
+                    <a href="#booking" class="btn btn-primary btn-sm">立即預約此服務</a>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="svc-5">
+                <button class="accordion-header">
+                    <span class="accordion-icon"><i class="fas fa-teeth-open"></i></span>
+                    <span class="accordion-title">牙齒矯正 / 箍牙 <small>Orthodontics</small></span>
+                    <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+                </button>
+                <div class="accordion-body">
+                    <p>針對牙齒排列不齊、咬合問題，我們提供傳統金屬矯正器及隱形矯正（如隱適美 Invisalign）等方案。療程由牙醫評估後度身訂制，助您達到整齊美觀的齒列。</p>
+                    <p><strong>適用對象：</strong>牙齒排列不齊、咬合不正者（青少年及成人均適用）</p>
+                    <a href="#booking" class="btn btn-primary btn-sm">立即預約此服務</a>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="svc-6">
+                <button class="accordion-header">
+                    <span class="accordion-icon"><i class="fas fa-tooth"></i></span>
+                    <span class="accordion-title">植牙 <small>Dental Implants</small></span>
+                    <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+                </button>
+                <div class="accordion-body">
+                    <p>植牙是取代缺失牙齒的長期穩固方案。以鈦金屬植體植入牙槽骨作為人工牙根，再裝上牙冠，外觀及功能與天然牙齒無異。我們的牙醫團隊具備豐富植牙經驗，確保療程安全精準。</p>
+                    <p><strong>適用對象：</strong>缺失一顆或多顆牙齒者</p>
+                    <a href="#booking" class="btn btn-primary btn-sm">立即預約此服務</a>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="svc-7">
+                <button class="accordion-header">
+                    <span class="accordion-icon"><i class="fas fa-crown"></i></span>
+                    <span class="accordion-title">牙冠及牙橋 <small>Crowns &amp; Bridges</small></span>
+                    <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+                </button>
+                <div class="accordion-body">
+                    <p>牙冠用於保護及修復受損或經根管治療後的牙齒；牙橋則用於填補缺牙位置。兩者均以高品質物料製作，兼具耐用性與自然美觀。</p>
+                    <p><strong>適用對象：</strong>牙齒嚴重受損、缺失一至兩顆牙齒者</p>
+                    <a href="#booking" class="btn btn-primary btn-sm">立即預約此服務</a>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="svc-8">
+                <button class="accordion-header">
+                    <span class="accordion-icon"><i class="fas fa-hand-holding-medical"></i></span>
+                    <span class="accordion-title">牙周病治療 <small>Periodontal Treatment</small></span>
+                    <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+                </button>
+                <div class="accordion-body">
+                    <p>牙周病是導致成人失牙的主要原因之一。我們提供深層洗牙（牙根刮治）、牙周手術及持續護理方案，控制牙周病進展，保護牙齒及牙齦健康。</p>
+                    <p><strong>適用對象：</strong>牙齦紅腫出血、牙齒鬆動或已診斷牙周病者</p>
+                    <a href="#booking" class="btn btn-primary btn-sm">立即預約此服務</a>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="svc-9">
+                <button class="accordion-header">
+                    <span class="accordion-icon"><i class="fas fa-child"></i></span>
+                    <span class="accordion-title">兒童牙科 <small>Paediatric Dentistry</small></span>
+                    <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+                </button>
+                <div class="accordion-body">
+                    <p>我們深明兒童對牙科治療可能感到緊張。團隊以耐心和親切的態度為小朋友提供口腔檢查、防蛀塗層（氟化物）、窩溝封閉劑及基本治療，從小培養良好的口腔衛生習慣。</p>
+                    <p><strong>適用對象：</strong>3 歲以上兒童</p>
+                    <a href="#booking" class="btn btn-primary btn-sm">立即預約此服務</a>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="svc-10">
+                <button class="accordion-header">
+                    <span class="accordion-icon"><i class="fas fa-bolt"></i></span>
+                    <span class="accordion-title">緊急牙科服務 <small>Emergency Dental Care</small></span>
+                    <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+                </button>
+                <div class="accordion-body">
+                    <p>牙齒突然劇痛、意外撞斷或脫落？我們提供緊急牙科診症服務，盡量於最短時間內為您安排就診，迅速處理急性牙科問題，減輕痛楚及防止情況惡化。</p>
+                    <p><strong>處理方式：</strong>請致電 <a href="tel:61231235">6123 1235</a> 說明情況，我們將盡快安排</p>
+                    <a href="#booking" class="btn btn-primary btn-sm">立即預約此服務</a>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="svc-11">
+                <button class="accordion-header">
+                    <span class="accordion-icon"><i class="fas fa-head-side-virus"></i></span>
+                    <span class="accordion-title">智慧齒處理 <small>Wisdom Tooth Management</small></span>
+                    <span class="accordion-arrow"><i class="fas fa-chevron-down"></i></span>
+                </button>
+                <div class="accordion-body">
+                    <p>智慧齒（第三大臼齒）若生長位置不正或空間不足，可能導致疼痛、發炎或影響鄰牙。我們提供 X 光評估及智慧齒拔除手術，確保安全處理。</p>
+                    <p><strong>適用對象：</strong>智慧齒引起不適或經評估需拔除者</p>
+                    <a href="#booking" class="btn btn-primary btn-sm">立即預約此服務</a>
+                </div>
+            </div>
+
+            <div class="services-bottom-cta">
+                <p>不確定需要哪項服務？歡迎預約諮詢，我們的牙醫會為您詳細評估及建議。</p>
+                <a href="#booking" class="btn btn-primary">預約諮詢</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION: ABOUT US ========== -->
+    <section id="about" class="section">
+        <div class="page-banner">
+            <div class="container">
+                <h1>關於 Matthew Lam 牙醫診所</h1>
+                <p>以專業、細心、誠信，守護每一個笑容。</p>
+            </div>
+        </div>
+
+        <!-- Clinic Intro -->
+        <div class="about-intro">
+            <div class="container">
+                <div class="about-intro-content">
+                    <h2 class="section-title">診所簡介</h2>
+                    <p>Matthew Lam 牙醫診所位於香港銅鑼灣核心地段，交通便利。診所由林醫生（Dr. Matthew Lam）創立，多年來一直秉持「以患者為中心」的理念，為區內居民及上班族提供全面、專業的牙科護理服務。</p>
+                    <p>我們相信，優質的牙科服務不僅是治療問題，更是預防問題、建立信任的過程。從您踏入診所的一刻起，我們的團隊會以親切的態度、清晰的溝通和專業的技術，確保每次就診都是安心、舒適的體驗。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctor Profile -->
+        <div class="doctor-profile">
+            <div class="container">
+                <h2 class="section-title">醫生簡介</h2>
+                <div class="doctor-card">
+                    <div class="doctor-photo">
+                        <div class="doctor-photo-placeholder">
+                            <i class="fas fa-user-md"></i>
+                            <span>Dr. Matthew Lam</span>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>林醫生（Dr. Matthew Lam）</h3>
+                        <p class="doctor-qualification"><i class="fas fa-graduation-cap"></i> 香港大學牙醫學士（BDS, HKU）</p>
+                        <p class="doctor-specialty"><i class="fas fa-stethoscope"></i> 專業範疇：一般牙科、牙齒美白、植牙、牙齒矯正</p>
+                        <p class="doctor-desc">林醫生擁有豐富臨床經驗，專注於為患者提供個人化的治療方案。他深信良好的醫患溝通是成功治療的關鍵，致力以淺白易懂的方式解釋病情及治療選項，讓患者在充分了解下作出最適合自己的決定。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Values -->
+        <div class="our-values">
+            <div class="container">
+                <h2 class="section-title">我們的理念</h2>
+                <div class="card-grid three-col">
+                    <div class="value-card">
+                        <div class="value-icon">🎯</div>
+                        <h3>專業精準</h3>
+                        <p>採用先進設備及技術，確保每項治療達到最高標準</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h3>誠信透明</h3>
+                        <p>清晰解釋治療方案及費用，絕無隱藏收費</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">💛</div>
+                        <h3>以人為本</h3>
+                        <p>重視每位患者的感受與需求，營造無壓力的就診環境</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Equipment Gallery -->
+        <div class="equipment-gallery">
+            <div class="container">
+                <h2 class="section-title">診所設備及環境</h2>
+                <p class="section-desc">我們的診所配備數碼X光機、口腔掃描器及先進消毒設備，在確保治療質素的同時，亦為您提供舒適安全的環境。</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-x-ray"></i><span>數碼X光機</span></div></div>
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-microscope"></i><span>口腔掃描器</span></div></div>
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-pump-medical"></i><span>先進消毒設備</span></div></div>
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-chair"></i><span>舒適診療椅</span></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About CTA -->
+        <div class="cta-section">
+            <div class="container cta-content">
+                <h2>想親身體驗我們的服務？</h2>
+                <a href="#booking" class="btn btn-primary btn-lg">預約首次諮詢</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION: CONTACT ========== -->
+    <section id="contact" class="section">
+        <div class="page-banner">
+            <div class="container">
+                <h1>聯絡我們</h1>
+                <p>歡迎隨時與我們聯繫，我們樂意為您解答任何牙科問題。</p>
+            </div>
+        </div>
+
+        <!-- Contact Info Cards -->
+        <div class="contact-info">
+            <div class="container">
+                <div class="card-grid four-col">
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>地址</h3>
+                        <p>香港銅鑼灣XXX街XX大廈地下</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h3>電話</h3>
+                        <p><a href="tel:61231235">6123 1235</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>電郵</h3>
+                        <p><a href="mailto:matthewlam@gmail.com">matthewlam@gmail.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+                        <h3>營業時間</h3>
+                        <p>星期一至五：09:30–18:30<br>星期六：09:00–13:00<br>星期日及公眾假期休息</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-section">
+            <div class="container">
+                <h2 class="section-title">診所位置</h2>
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9!2d114.185!3d22.28!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE2JzQ4LjAiTiAxMTTCsDExJzA2LjAiRQ!5e0!3m2!1szh-TW!2shk!4v1" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Matthew Lam 牙醫診所位置"></iframe>
+                </div>
+                <p class="map-note">鄰近港鐵銅鑼灣站，步行約數分鐘即可到達。</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-section">
+            <div class="container">
+                <h2 class="section-title">查詢表單</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cf-name">姓名 <span class="required">*</span></label>
+                            <input type="text" id="cf-name" name="name" required placeholder="請輸入您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-phone">電話 <span class="required">*</span></label>
+                            <input type="tel" id="cf-phone" name="phone" required placeholder="請輸入您的電話號碼">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cf-email">電郵（選填）</label>
+                            <input type="email" id="cf-email" name="email" placeholder="請輸入您的電郵地址">
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-category">查詢類別 <span class="required">*</span></label>
+                            <select id="cf-category" name="category" required>
+                                <option value="" disabled selected>請選擇查詢類別</option>
+                                <option value="general">一般查詢</option>
+                                <option value="service">服務查詢</option>
+                                <option value="booking">預約查詢</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="cf-message">訊息內容 <span class="required">*</span></label>
+                        <textarea id="cf-message" name="message" required maxlength="500" rows="5" placeholder="請輸入您的查詢內容（最多 500 字）"></textarea>
+                        <div class="char-count"><span id="charCount">0</span> / 500</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">提交查詢</button>
+                </form>
+                <div class="form-success" id="formSuccess" style="display:none;">
+                    <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>感謝您的查詢！</h3>
+                    <p>我們將於 1 個工作天內回覆您。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION: BOOKING ========== -->
+    <section id="booking" class="section">
+        <div class="page-banner">
+            <div class="container">
+                <h1>網上預約</h1>
+                <p>輕鬆幾步，即可預約您的牙科診症時間。</p>
+            </div>
+        </div>
+        <div class="booking-form-section">
+            <div class="container">
+                <div class="booking-notice">
+                    <i class="fas fa-info-circle"></i>
+                    <p>請填寫以下 Google 表單完成預約。我們的團隊會於 1 個工作天內聯絡您確認預約。</p>
+                </div>
+                <div class="google-form-wrapper">
+                    <!-- 
+                        ★ 請將下方 iframe 的 src 替換為你的 Google Form 嵌入連結 ★
+                        取得方法：Google Form → 傳送 → 嵌入HTML → 複製 src 連結
+                    -->
+                    <iframe 
+                        src="about:blank" 
+                        width="100%" 
+                        height="800" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0"
+                        title="預約表單">
+                        載入中…
+                    </iframe>
+                    <div class="form-placeholder-msg">
+                        <i class="fas fa-edit"></i>
+                        <h3>Google Form 預約表單</h3>
+                        <p>請將此處的 iframe src 替換為你的 Google Form 嵌入連結。</p>
+                        <p>或直接致電 <a href="tel:61231235">6123 1235</a> 預約。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-logo">
+                <div class="logo-icon">🦷</div>
+                <span>Matthew Lam 牙醫診所</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/85261231235" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Matthew Lam 牙醫診所. All Rights Reserved.
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <a href="#">私隱政策</a> | <a href="#">使用條款</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+    <a href="https://wa.me/85261231235?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E6%9C%89%E9%97%9C%E7%89%99%E7%A7%91%E6%9C%8D%E5%8B%99%E7%9A%84%E8%B3%87%E8%A8%8A%E3%80%82" 
+       class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp 聯絡">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="返回頂部"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
